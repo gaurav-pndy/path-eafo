@@ -1,0 +1,69 @@
+{
+    "navbar": {
+        "about": "About",
+        "registerNow": "Register Now",
+        "submission": "Submission",
+        "experts": "Experts & Committees",
+        "schedule": "Schedule & Program",
+        "visa": "Visa",
+        "sponsors": "Sponsors",
+        "courseDesc": "Course Description",
+        "venue": "Venue",
+        "participationVariants": "Participation Variants",
+        "compParticipation": "Companion Participation",
+        "awards": "Awards",
+        "gallery": "Gallery & Archive",
+        "oncoArchive": "OncoPathology Archive",
+        "organizations": "Organizations",
+        "eafo": "EAFO",
+        "pricing": "Pricing",
+        "paymentOptions": "Payment Options",
+        "contact": "Contact",
+        "submitAbstract": "Submit Abstract",
+        "submitPathology": "Submit Pathology Case",
+        "submitResearch": "Submit Research Proposal",
+        "visaTypes": "Types of Visa",
+        "visaFree": "Visa-Free/On Arrival",
+        "eVisa": "E-Visa",
+        "visaDocs": "Documents for Visa",
+        "russianEmb": "Russian Embassies and Consulates",
+        "registration": "Registration",
+        "home": "Home"
+    },
+    "audience": {
+        "targetAudience": "Target <br/> Audience",
+        "pathologists": "Pathologists - CytoPathologists -",
+        "histopathologists": "HistoPathologists",
+        "molecularBiologists": "Molecular Biologists - Geneticists",
+        "waitOver": "The wait is over",
+        "timeLeft": "TIME LEFT UNTIL THE NEXT EVENT",
+        "timer": "  This countdown timer <br />shows how much time left until: <span class=' font-medium'>03 October, 2024</span>"
+    },
+    "welcome": {
+        "heading":"Dear friends from all over the world!",
+        "para1": "It gives us great pleasure to welcome you to the EAFO OncoPathology Courses to be held in various cities of Russian Federation. As usual, like every other EAFO event, this course will follow the same principles of bringing together the north, south, east and west on one platform.",
+        "para2": " The course will comprise of theory sessions and interactive case discussions:",
+        "targetAudience": "Target Audience:",
+        "pathologists": "Pathologists (HistoPathologists & CytoPathologists)",
+        "molecularBiologists": "Specialists in Molecular Biology, Genetics, Oncology",
+        "students": "Students & PostGraduates",
+        "postDoc": "PostDoc Fellows",
+
+        "para3": "This event will give you a unique opportunity to communicate with world-renowned experts in the field of morphological and molecular genetic diagnostics & management of neoplasms.",
+
+        "para4": " We look forward to your participation in this unique courses which will take place in 2025:",
+        "li1": "45th EAFO OncoPathology Course «HematoLymphoid Tumors», Russian Federation;",
+        "li2": "46th EAFO OncoPathology Course «HepatoPancreaticBilliary Tumors», Russian Federation;",
+        "li3": " 47th EAFO OncoPathology Course «Breast Tumors», within the framework of VI EAFO Kazan Breast Cancer Forum, Kazan, Republic of Tatarstan, Russian Federation.",
+        "bestWishes": "Best wishes,",
+        "eafoTeam": "EAFO Team"
+    },
+    "specialities": {
+        "title": "Specialties",
+        "item1": "Pathology (Cytopathology, Histopathology)",
+        "item2": "Molecular Biology, Genetics",
+        "item3": "Laboratory Medicine",
+        "item4": "Hematology",
+        "item5": "Oncology"
+    }
+}

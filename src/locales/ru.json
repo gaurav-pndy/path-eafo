@@ -1,0 +1,33 @@
+{
+    "navbar": {
+        "about": "About ru",
+        "registerNow": "Register Now",
+        "submission": "Submission",
+        "experts": "Experts & Committees",
+        "schedule": "Schedule & Program",
+        "visa": "Visa",
+        "sponsors": "Sponsors",
+        "courseDesc": "Course Description",
+        "venue": "Venue",
+        "participationVariants": "Participation Variants",
+        "compParticipation": "Companion Participation",
+        "awards": "Awards",
+        "gallery": "Gallery & Archive",
+        "oncoArchive": "OncoPathology Archive",
+        "organizations": "Organizations",
+        "eafo": "EAFO",
+        "pricing": "Pricing",
+        "paymentOptions": "Payment Options",
+        "contact": "Contact",
+        "submitAbstract": "Submit Abstract",
+        "submitPathology": "Submit Pathology Case",
+        "submitResearch": "Submit Research Proposal",
+        "visaTypes": "Types of Visa",
+        "visaFree": "Visa-Free/On Arrival",
+        "eVisa": "E-Visa",
+        "visaDocs": "Documents for Visa",
+        "russianEmb": "Russian Embassies and Consulates",
+        "registration": "Registration",
+        "home": "Home"
+    }
+}
