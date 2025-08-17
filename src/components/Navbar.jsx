@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -16,208 +16,379 @@ export default function Navbar() {
     setSelectedLang(lang);
   };
 
-  const navItems = [
-    {
-      id: "about",
-      label: t("navbar.about"),
-      type: "page",
-      path: "/about",
-      dropdown: [
-        {
-          id: "courseDesc",
-          label: t("navbar.courseDesc"),
-          type: "section",
-          path: "/about#courseDesc",
-        },
-        {
-          id: "venue",
-          label: t("navbar.venue"),
-          type: "page",
-          path: "/venue",
-        },
-        {
-          id: "participationVariants",
-          label: t("navbar.participationVariants"),
-          type: "section",
-          path: "/about#participationVariants",
-        },
-        {
-          id: "compParticipation",
-          label: t("navbar.compParticipation"),
-          type: "section",
-          path: "/about#compParticipation",
-        },
-        {
-          id: "awards",
-          label: t("navbar.awards"),
-          type: "section",
-          path: "/about#awards",
-        },
-        {
-          id: "gallery",
-          label: t("navbar.gallery"),
-          type: "section",
-          path: "/about#gallery",
-        },
-        {
-          id: "oncoArchive",
-          label: t("navbar.oncoArchive"),
-          type: "section",
-          path: "/about#oncoArchive",
-        },
-        {
-          id: "organizations",
-          label: t("navbar.organizations"),
-          type: "section",
-          path: "/about#organizations",
-        },
-        {
-          id: "eafo",
-          label: t("navbar.eafo"),
-          type: "section",
-          path: "/about#eafo",
-        },
-        {
-          id: "pricing",
-          label: t("navbar.pricing"),
-          type: "section",
-          path: "/about#pricing",
-        },
-        {
-          id: "paymentOptions",
-          label: t("navbar.paymentOptions"),
-          type: "section",
-          path: "/about#paymentOptions",
-        },
-        {
-          id: "contact",
-          label: t("navbar.contact"),
-          type: "section",
-          path: "/about#contact",
-        },
-      ],
-    },
-    {
-      id: "registerNow",
-      label: t("navbar.registerNow"),
-      type: "page",
-      path: "/register",
-      dropdown: [
-        {
-          id: "pricing",
-          label: t("navbar.pricing"),
-          type: "section",
-          path: "/register#pricing",
-        },
-        {
-          id: "registerNow",
-          label: t("navbar.registerNow"),
-          type: "page",
-          path: "/register",
-        },
-        {
-          id: "paymentOptions",
-          label: t("navbar.paymentOptions"),
-          type: "section",
-          path: "/register#paymentOptions",
-        },
-        {
-          id: "awards",
-          label: t("navbar.awards"),
-          type: "section",
-          path: "/register#awards",
-        },
-      ],
-    },
-    {
-      id: "submission",
-      label: t("navbar.submission"),
-      type: "page",
-      path: "/submission",
-      dropdown: [
-        {
-          id: "submitAbstract",
-          label: t("navbar.submitAbstract"),
-          type: "section",
-          path: "/submission#abstract",
-        },
-        {
-          id: "submitPathology",
-          label: t("navbar.submitPathology"),
-          type: "section",
-          path: "/submission#pathology",
-        },
-        {
-          id: "submitResearch",
-          label: t("navbar.submitResearch"),
-          type: "section",
-          path: "/submission#research",
-        },
-        {
-          id: "awards",
-          label: t("navbar.awards"),
-          type: "section",
-          path: "/submission#awards",
-        },
-      ],
-    },
-    {
-      id: "experts",
-      label: t("navbar.experts"),
-      type: "page",
-      path: "/experts",
-    },
-    {
-      id: "schedule",
-      label: t("navbar.schedule"),
-      type: "page",
-      path: "/schedule",
-    },
-    {
-      id: "visa",
-      label: t("navbar.visa"),
-      type: "page",
-      path: "/visa",
-      dropdown: [
-        {
-          id: "visaTypes",
-          label: t("navbar.visaTypes"),
-          type: "section",
-          path: "/visa#visaTypes",
-        },
-        {
-          id: "visaFree",
-          label: t("navbar.visaFree"),
-          type: "section",
-          path: "/visa#visaFree",
-        },
-        {
-          id: "eVisa",
-          label: t("navbar.eVisa"),
-          type: "section",
-          path: "/visa#eVisa",
-        },
-        {
-          id: "visaDocs",
-          label: t("navbar.visaDocs"),
-          type: "section",
-          path: "/visa#visaDocs",
-        },
-        {
-          id: "russianEmb",
-          label: t("navbar.russianEmb"),
-          type: "section",
-          path: "/visa#russianEmb",
-        },
-      ],
-    },
-    {
-      id: "sponsors",
-      label: t("navbar.sponsors"),
-      type: "page",
-      path: "/sponsors",
-    },
-  ];
+  const navItemsSets = {
+    en: [
+      {
+        id: "about",
+        label: t("navbar.about"),
+        type: "page",
+        path: "/about",
+        dropdown: [
+          {
+            id: "courseDesc",
+            label: t("navbar.courseDesc"),
+            type: "section",
+            path: "/about#courseDesc",
+          },
+          {
+            id: "venue",
+            label: t("navbar.venue"),
+            type: "page",
+            path: "/venue",
+          },
+          {
+            id: "participationVariants",
+            label: t("navbar.participationVariants"),
+            type: "section",
+            path: "/about#participationVariants",
+          },
+          {
+            id: "compParticipation",
+            label: t("navbar.compParticipation"),
+            type: "section",
+            path: "/about#compParticipation",
+          },
+          {
+            id: "awards",
+            label: t("navbar.awards"),
+            type: "section",
+            path: "/about#awards",
+          },
+          {
+            id: "gallery",
+            label: t("navbar.gallery"),
+            type: "section",
+            path: "/about#gallery",
+          },
+          {
+            id: "oncoArchive",
+            label: t("navbar.oncoArchive"),
+            type: "section",
+            path: "/about#oncoArchive",
+          },
+          {
+            id: "organizations",
+            label: t("navbar.organizations"),
+            type: "section",
+            path: "/about#organizations",
+          },
+          {
+            id: "eafo",
+            label: t("navbar.eafo"),
+            type: "section",
+            path: "/about#eafo",
+          },
+          {
+            id: "pricing",
+            label: t("navbar.pricing"),
+            type: "section",
+            path: "/about#pricing",
+          },
+          {
+            id: "paymentOptions",
+            label: t("navbar.paymentOptions"),
+            type: "section",
+            path: "/about#paymentOptions",
+          },
+          {
+            id: "contact",
+            label: t("navbar.contact"),
+            type: "section",
+            path: "/about#contact",
+          },
+        ],
+      },
+      {
+        id: "registerNow",
+        label: t("navbar.registerNow"),
+        type: "page",
+        path: "/register",
+        dropdown: [
+          {
+            id: "pricing",
+            label: t("navbar.pricing"),
+            type: "section",
+            path: "/register#pricing",
+          },
+          {
+            id: "registerNow",
+            label: t("navbar.registerNow"),
+            type: "page",
+            path: "/register",
+          },
+          {
+            id: "paymentOptions",
+            label: t("navbar.paymentOptions"),
+            type: "section",
+            path: "/register#paymentOptions",
+          },
+          {
+            id: "awards",
+            label: t("navbar.awards"),
+            type: "section",
+            path: "/register#awards",
+          },
+        ],
+      },
+      {
+        id: "submission",
+        label: t("navbar.submission"),
+        type: "page",
+        path: "/submission",
+        dropdown: [
+          {
+            id: "submitAbstract",
+            label: t("navbar.submitAbstract"),
+            type: "section",
+            path: "/submission#abstract",
+          },
+          {
+            id: "submitPathology",
+            label: t("navbar.submitPathology"),
+            type: "section",
+            path: "/submission#pathology",
+          },
+          {
+            id: "submitResearch",
+            label: t("navbar.submitResearch"),
+            type: "section",
+            path: "/submission#research",
+          },
+          {
+            id: "awards",
+            label: t("navbar.awards"),
+            type: "section",
+            path: "/submission#awards",
+          },
+        ],
+      },
+      {
+        id: "experts",
+        label: t("navbar.experts"),
+        type: "page",
+        path: "/experts",
+      },
+      {
+        id: "schedule",
+        label: t("navbar.schedule"),
+        type: "page",
+        path: "/schedule",
+      },
+      {
+        id: "visa",
+        label: t("navbar.visa"),
+        type: "page",
+        path: "/visa",
+        dropdown: [
+          {
+            id: "visaTypes",
+            label: t("navbar.visaTypes"),
+            type: "section",
+            path: "/visa#visaTypes",
+          },
+          {
+            id: "visaFree",
+            label: t("navbar.visaFree"),
+            type: "section",
+            path: "/visa#visaFree",
+          },
+          {
+            id: "eVisa",
+            label: t("navbar.eVisa"),
+            type: "section",
+            path: "/visa#eVisa",
+          },
+          {
+            id: "visaDocs",
+            label: t("navbar.visaDocs"),
+            type: "section",
+            path: "/visa#visaDocs",
+          },
+          {
+            id: "russianEmb",
+            label: t("navbar.russianEmb"),
+            type: "section",
+            path: "/visa#russianEmb",
+          },
+        ],
+      },
+      {
+        id: "sponsors",
+        label: t("navbar.sponsors"),
+        type: "page",
+        path: "/sponsors",
+      },
+    ],
+    ru: [
+      {
+        id: "about",
+        label: t("navbar.about"),
+        type: "page",
+        path: "/about",
+        dropdown: [
+          {
+            id: "courseDesc",
+            label: t("navbar.courseDesc"),
+            type: "section",
+            path: "/about#courseDesc",
+          },
+          {
+            id: "venue",
+            label: t("navbar.venue"),
+            type: "page",
+            path: "/venue",
+          },
+          {
+            id: "participationVariants",
+            label: t("navbar.participationVariants"),
+            type: "section",
+            path: "/about#participationVariants",
+          },
+          {
+            id: "compParticipation",
+            label: t("navbar.compParticipation"),
+            type: "section",
+            path: "/about#compParticipation",
+          },
+          {
+            id: "awards",
+            label: t("navbar.awards"),
+            type: "section",
+            path: "/about#awards",
+          },
+          {
+            id: "gallery",
+            label: t("navbar.gallery"),
+            type: "section",
+            path: "/about#gallery",
+          },
+          {
+            id: "oncoArchive",
+            label: t("navbar.oncoArchive"),
+            type: "section",
+            path: "/about#oncoArchive",
+          },
+          {
+            id: "organizations",
+            label: t("navbar.organizations"),
+            type: "section",
+            path: "/about#organizations",
+          },
+          {
+            id: "eafo",
+            label: t("navbar.eafo"),
+            type: "section",
+            path: "/about#eafo",
+          },
+          {
+            id: "pricing",
+            label: t("navbar.pricing"),
+            type: "section",
+            path: "/about#pricing",
+          },
+          {
+            id: "paymentOptions",
+            label: t("navbar.paymentOptions"),
+            type: "section",
+            path: "/about#paymentOptions",
+          },
+          {
+            id: "contact",
+            label: t("navbar.contact"),
+            type: "section",
+            path: "/about#contact",
+          },
+        ],
+      },
+      {
+        id: "registerNow",
+        label: t("navbar.registerNow"),
+        type: "page",
+        path: "/register",
+        dropdown: [
+          {
+            id: "pricing",
+            label: t("navbar.pricing"),
+            type: "section",
+            path: "/register#pricing",
+          },
+          {
+            id: "registerNow",
+            label: t("navbar.registerNow"),
+            type: "page",
+            path: "/register",
+          },
+          {
+            id: "paymentOptions",
+            label: t("navbar.paymentOptions"),
+            type: "section",
+            path: "/register#paymentOptions",
+          },
+          {
+            id: "awards",
+            label: t("navbar.awards"),
+            type: "section",
+            path: "/register#awards",
+          },
+        ],
+      },
+      {
+        id: "submission",
+        label: t("navbar.submission"),
+        type: "page",
+        path: "/submission",
+        dropdown: [
+          {
+            id: "submitAbstract",
+            label: t("navbar.submitAbstract"),
+            type: "section",
+            path: "/submission#abstract",
+          },
+          {
+            id: "submitPathology",
+            label: t("navbar.submitPathology"),
+            type: "section",
+            path: "/submission#pathology",
+          },
+          {
+            id: "submitResearch",
+            label: t("navbar.submitResearch"),
+            type: "section",
+            path: "/submission#research",
+          },
+          {
+            id: "awards",
+            label: t("navbar.awards"),
+            type: "section",
+            path: "/submission#awards",
+          },
+        ],
+      },
+      {
+        id: "experts",
+        label: t("navbar.experts"),
+        type: "page",
+        path: "/experts",
+      },
+      {
+        id: "schedule",
+        label: t("navbar.schedule"),
+        type: "page",
+        path: "/schedule",
+      },
+
+      {
+        id: "sponsors",
+        label: t("navbar.sponsors"),
+        type: "page",
+        path: "/sponsors",
+      },
+    ],
+  };
+
+  const navItems = useMemo(() => {
+    return navItemsSets[i18n.language] || navItemsSets["en"]; // fallback to English
+  }, [i18n.language]);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -243,11 +414,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4  flex items-center justify-between h-22">
         {/* Logo + Title */}
         <div className="flex items-center gap-4">
-          <img src="/logo.avif" alt="EAFO logo" className="h-14" />
+          <img src="/logo.avif" alt="EAFO logo" className="h-10 xl:h-14" />
         </div>
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-10 text-sm text-gray-700">
+        <ul className="hidden lg:flex items-center gap-5 xl:gap-10 text-[0.8rem] xl:text-sm text-gray-700">
           {navItems.map((item, idx) => (
             <li
               key={idx}
@@ -312,7 +483,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setMobileMenu(!mobileMenu)}
         >
           <Menu size={28} />
@@ -326,7 +497,7 @@ export default function Navbar() {
             initial={{ height: 0 }}
             animate={{ height: "auto" }}
             exit={{ height: 0 }}
-            className="md:hidden bg-white shadow-md overflow-hidden"
+            className="lg:hidden bg-white shadow-md overflow-hidden"
           >
             <ul className="flex flex-col gap-2 p-4  max-h-[calc(85vh)] overflow-y-auto">
               {navItems.map((item, idx) => (

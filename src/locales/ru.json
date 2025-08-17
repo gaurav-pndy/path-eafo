@@ -1,33 +1,93 @@
 {
     "navbar": {
-        "about": "About ru",
-        "registerNow": "Register Now",
-        "submission": "Submission",
-        "experts": "Experts & Committees",
-        "schedule": "Schedule & Program",
+        "about": "О мероприятии",
+        "registerNow": "Участвовать",
+        "submission": "Подать заявки",
+        "experts": "Эксперты и комитеты",
+        "schedule": "Программа",
         "visa": "Visa",
-        "sponsors": "Sponsors",
-        "courseDesc": "Course Description",
-        "venue": "Venue",
-        "participationVariants": "Participation Variants",
-        "compParticipation": "Companion Participation",
-        "awards": "Awards",
-        "gallery": "Gallery & Archive",
-        "oncoArchive": "OncoPathology Archive",
-        "organizations": "Organizations",
+        "sponsors": "Спонсоры",
+        "courseDesc": "О курсе",
+        "venue": "Место проведения",
+        "participationVariants": "Формы участия",
+        "compParticipation": "Льготное участие",
+        "awards": "Награды",
+        "gallery": "Галерея и архив",
+        "oncoArchive": "Архив мероприятий по онкопатологии",
+        "organizations": "Партнеры",
         "eafo": "EAFO",
-        "pricing": "Pricing",
-        "paymentOptions": "Payment Options",
-        "contact": "Contact",
-        "submitAbstract": "Submit Abstract",
-        "submitPathology": "Submit Pathology Case",
-        "submitResearch": "Submit Research Proposal",
+        "pricing": "Стоимость",
+        "paymentOptions": "Формы оплаты",
+        "contact": "Контакты",
+        "submitAbstract": "Подать тезисы",
+        "submitPathology": "Подать наблюдение",
+        "submitResearch": "Подать ECRC проект",
         "visaTypes": "Types of Visa",
         "visaFree": "Visa-Free/On Arrival",
         "eVisa": "E-Visa",
         "visaDocs": "Documents for Visa",
         "russianEmb": "Russian Embassies and Consulates",
-        "registration": "Registration",
-        "home": "Home"
+        "registration": "Конкурсное участие",
+        "home": "Главная",
+        "register": "Регистрация",
+        "program": "Программа"
+    },
+    "footer": {
+"text": "разийская федерация онкологии | АНО EAФO | Pasovit Technologies. Все права защищены | <a href='https://www.eafo.info/terms-of-use' target='_blank' class='text-red-600 underline'>Условия использования</a> | <a href='https://www.eafo.info/privacy-policy' target='_blank' class='text-red-600 underline'>Политика конфиденциальности</a> <a href='https://path.eafo.info/ru/agreement' target='_blank' class='text-red-600 underline'> Договор оферты </a>"
+    },
+    "audience": {
+        "targetAudience": "Целевая <br/> аудитория",
+        "pathologists": "Патологоанатомы — Цитопатологи — ",
+        "histopathologists": "Врачи КЛД",
+        "molecularBiologists": "Молекулярные биологи — Генетики",
+        "waitOver": "The wait is over",
+        "timeLeft": "До начала мероприятия",
+        "timer": "  Таймер показывает сколько осталось до <br/> начала мероприятия 3 октября 2024"
+    },
+    "welcome": {
+        "heading":"орогие друзья!",
+        "para1": "Мы с огромным удовольствием приветствуем Вас на EAFO курсах по онкопатологии, который пройдут в разных городах Российской Федерации. Как и все остальные мероприятия EAFO, эти курсы также будут следовать принципам единства и объединения Востока, Запада, Севера и Юга на одной платформе.",
+        "para2": " Курсы состоят из теоретических сессий и интерактивного обсуждения клинико-морфологических наблюдений.",
+        "targetAudience": "Целевая аудитория:",
+        "pathologists": "Врачи клинической лабораторной диагностики, в том числе цитологи",
+        "molecularBiologists": "Специалисты в области молекулярной биологии, генетики, онкологии и гематологии",
+        "students": "Учащиеся: студенты, ординаторы",
+        "postDoc": "Аспиранты и докторанты",
+
+        "para3": "Эти мероприятия станут для Вас уникальной возможностью для тесного общения с ведущими экспертами международного уровня по диагностике и лечению гематолимфоидных опухолей.",
+
+        "para4": "Мы с нетерпением ждем Вас на этих уникальных мероприятиях, которые пройдут в 2025 году:",
+        "li1": "45-й EAFO курс по онкопатологии 'Гематолимфоидные новообразования', Российская Федерация;",
+        "li2": "46-й EAFO курс по онкопатологии 'Опухоли гепатопанкреатобиллиарной системы', Российская Федерация;",
+        "li3": "47-й EAFO курс по онкопатологии 'Опухоли молочной железы', в составе VI EAFO Казанского форума по раку молочной железы, Казань, Республика Татарстан, Российская Федерация.​​",
+        "bestWishes": "С наилучшими пожеланиями,",
+        "eafoTeam": "Команда EAFO"
+    },
+    "specialities": {
+        "title": "Специальности",
+        "item1": "Патологическая анатомия,цитопатология",
+        "item2": "Молекулярная биология, генетика",
+        "item3": "Клинико-лабораторная диагностика",
+        "item4": "Гематология",
+        "item5": "Онкология"
+    },
+       "figures": {
+        "title": "Наши курсы",
+        "days": "ДНЕЙ",
+        "experts": "ЭКСПЕРТОВ",
+        "participants": "УЧАСТНИКОВ",
+        "online": "ОЧНО И ОНЛАЙН"
+    },
+    "partners": "Наши партнеры",
+    "about": {
+        "title": "О нас",
+        "content": "Евразийская Федерация Онкологии – это уникальное международное сообщество, объединяющее всех специалистов, которые занимаются профилактикой, диагностикой и лечением онкологических заболеваний, разработкой противоопухолевых препаратов, сталкиваются в своей практике с злокачественными новообразованиями, а также сообщества пациентов и фонды по борьбе против рака."
+    },
+    "courses": {
+        "title": "Присоединяйтесь к EAFO курсам по онкопатологии",
+        "list": "<li> 1. 45-й EAFO курс по онкопатологии 'Гематолимфоидные новообразования', 3—7 октября, Москва, Российская Федерация;</li> <li> 2. 46-й EAFO курс по онкопатологии 'Опухоли гепатопанкреатобиллиарной системы', 13—17 октября, Москва, Российская Федерация; </li> <li> 3. 47-й EAFO курс по онкопатологии 'Опухоли молочной железы', в составе VI EAFO Казанский форум по раку молочной железы, 6—10 ноября, Казань, Республика Татарстан, Российская Федерация.​ </li>",
+        "para1": "Не упустите возможность принять участие в этой уникальной 5-дневной учебной программе, включающей современную теорию и практические обсуждения со всемирно известными экспертами. ",
+        "para2": "",
+        "registerNow": "Регистрация"
     }
 }

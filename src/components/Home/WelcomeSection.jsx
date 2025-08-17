@@ -9,7 +9,7 @@ const WelcomeSection = () => {
       }}
       className="relative bg-[#fff0ec] text-[rgb(40,41,54)] py-6 bg-repeat-x bg-[length:63%] bg-bottom border-t  border-[rgb(40,41,54)]"
     >
-      <div className="container mx-auto max-w-5xl px-6">
+      <div className="container mx-auto max-w-5xl px-4">
         {/* Heading */}
         <h2 className="text-3xl md:text-[2.5rem]  mb-6">
           {t("welcome.heading")}

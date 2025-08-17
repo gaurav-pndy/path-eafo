@@ -42,10 +42,10 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full md:h-[90vh] overflow-hidden">
+    <section className="relative w-full xl:h-[90vh] overflow-hidden">
       <Slider {...settings}>
         {images.map((src, i) => (
-          <div key={i} className="md:h-[90vh]">
+          <div key={i} className="xl:h-[90vh]">
             <motion.img
               src={src}
               alt={`Slide ${i}`}

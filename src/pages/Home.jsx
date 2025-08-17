@@ -4,6 +4,10 @@ import WelcomeSection from "../components/Home/WelcomeSection";
 import { useTranslation } from "react-i18next";
 import Specialties from "../components/Home/Specialities";
 import CourseFigures from "../components/Home/CourseFigures";
+import Partners from "../components/Home/Partners";
+import Gallery from "../components/Home/Gallery";
+import AboutSection from "../components/Home/AboutSection";
+import CoursesSection from "../components/Home/CoursesSection";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -12,16 +16,16 @@ const Home = () => {
       <HeroSection />
       <section className="w-full">
         {/* Top Border */}
-        <div className="h-6 bg-[#00086b]" />
+        <div className="h-3 md:h-6 bg-[#00086b]" />
 
         {/* Target Audience Section */}
-        <div className="bg-[#c2274b] text-white py-3 md:py-6 px-6 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8">
-          <div className="text-4xl  md:border-r-6 md:pr-6 border-white md:text-7xl font-medium leading-tight text-center md:text-right">
+        <div className="bg-[#c2274b] text-white py-3 md:py-6 px-6 flex  items-center justify-center gap-2 md:gap-8">
+          <div className="text-2xl  border-r-6 pr-6 border-white md:text-4xl lg:text-7xl font-medium leading-tight text-right">
             <p
               dangerouslySetInnerHTML={{ __html: t("audience.targetAudience") }}
             ></p>
           </div>
-          <div className="border-t-4 pt-2 md:border-none md:pt-0  border-white text-lg md:text-4xl text-center md:leading-12 font-[300] md:text-left">
+          <div className="  border-white text-sm md:text-xl lg:text-4xl  lg:leading-12 font-[300] text-left">
             <p>{t("audience.pathologists")} </p>
             <p>{t("audience.histopathologists")}</p>
             <p>{t("audience.molecularBiologists")} </p>
@@ -29,7 +33,7 @@ const Home = () => {
         </div>
 
         {/* Bottom Border */}
-        <div className="h-6 bg-[#00086b]" />
+        <div className="h-3 md:h-6 bg-[#00086b]" />
 
         {/* The Wait is Over Section */}
         <div className="py-6 px-6 text-center">
@@ -50,6 +54,14 @@ const Home = () => {
       <Specialties />
 
       <CourseFigures />
+
+      <Partners />
+
+      {/* <Gallery /> */}
+
+      <AboutSection />
+
+      <CoursesSection />
     </div>
   );
 };

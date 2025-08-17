@@ -42,17 +42,10 @@ const Footer = () => {
       </div>
 
       {/* Bottom text */}
-      <div className="text-center  text-gray-800 font-[300]  py-2">
-        © 2010 - 2024 Eurasian Federation of Oncology | ANO EAFO | Pasovit
-        Technologies. All rights reserved |{" "}
-        <a href="/terms" className="text-red-600 underline">
-          Terms of Use
-        </a>{" "}
-        |{" "}
-        <a href="/privacy" className="text-red-600 underline">
-          Privacy Policy
-        </a>
-      </div>
+      <div
+        className="text-center  text-gray-800 font-[300]  py-2"
+        dangerouslySetInnerHTML={{ __html: t("footer.text") }}
+      ></div>
     </footer>
   );
 };

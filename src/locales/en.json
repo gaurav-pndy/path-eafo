@@ -10,7 +10,7 @@
         "courseDesc": "Course Description",
         "venue": "Venue",
         "participationVariants": "Participation Variants",
-        "compParticipation": "Companion Participation",
+        "compParticipation": "Competitive Participation",
         "awards": "Awards",
         "gallery": "Gallery & Archive",
         "oncoArchive": "OncoPathology Archive",
@@ -28,7 +28,12 @@
         "visaDocs": "Documents for Visa",
         "russianEmb": "Russian Embassies and Consulates",
         "registration": "Registration",
-        "home": "Home"
+        "home": "Home",
+        "program": "Program",
+        "register": "Register"
+    },
+    "footer": {
+"text": "© 2010 - 2024 Eurasian Federation of Oncology | ANO EAFO | Pasovit Technologies. All rights reserved | <a href='https://www.eafo.info/terms-of-use' target='_blank' class='text-red-600 underline'> Terms of Use </a> | <a href='https://www.eafo.info/privacy-policy' target='_blank' class='text-red-600 underline'> Privacy Policy </a>"
     },
     "audience": {
         "targetAudience": "Target <br/> Audience",
@@ -65,5 +70,24 @@
         "item3": "Laboratory Medicine",
         "item4": "Hematology",
         "item5": "Oncology"
+    },
+    "figures": {
+        "title": "Our Course (In Figures)",
+        "days": "Days",
+        "experts": "Experts",
+        "participants": "Participants Onsite",
+        "online": "Participants Online"
+    },
+    "partners": "Our Partners",
+    "about": {
+        "title": "About EAFO",
+        "content": "The Eurasian Federation of Oncology is a unique international professional organization comprising of invited experts involved in the prevention, diagnosis, treatment of cancer, drug development, basic research and also representatives of patient organizations and cancer survivors."
+    },
+    "courses": {
+        "title": "Join us at EAFO OncoPathology Courses",
+        "list": "<li> 1. 45th EAFO OncoPathology Course «HematoLymphoid Tumors», 03–07 October 2024, Moscow, Russian Federation; </li> <li> 2. 46th EAFO OncoPathology Course «HepatoPancreaticBilliary Tumors», 13–17 October 2024, Moscow, Russian Federation; </li> <li> 3. 47th EAFO OncoPathology Course «Breast Tumors», within the framework of VI EAFO Kazan Breast Cancer Forum, 06–10 November 2024, Kazan, Republic of Tatarstan, Russian Federation. </li>",
+        "para1": "Don't miss this opportunity to take part in this unique 5-day curriculum providing up-to-date theory and practical case discussions with world renowned experts.",
+        "para2": "Register now to be part in this exceptional program and update/refresh your knowledge in this rapidly evolving field.",
+        "registerNow": "Register Now"
     }
 }
