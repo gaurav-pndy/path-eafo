@@ -3,6 +3,7 @@ import AppLayout from "./layout/AppLayout";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Venue from "./pages/About/Venue";
 import Home from "./pages/Home";
+import CommonPage from "./pages/CommonPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,7 +18,9 @@ function App() {
 
         {
           path: "/venue",
-          element: <Venue />,
+          element: (
+            <CommonPage buttonText="Venue" buttonLink="venue" totalCards={3} />
+          ),
         },
       ],
     },
