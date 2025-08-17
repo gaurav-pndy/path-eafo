@@ -3,7 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import i18n from "../utils/i18n";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { TfiMenu } from "react-icons/tfi";
+import { RxCross1 } from "react-icons/rx";
 
 export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -27,8 +29,8 @@ export default function Navbar() {
           {
             id: "courseDesc",
             label: t("navbar.courseDesc"),
-            type: "section",
-            path: "/about#courseDesc",
+            type: "page",
+            path: "/course-description",
           },
           {
             id: "venue",
@@ -39,14 +41,14 @@ export default function Navbar() {
           {
             id: "participationVariants",
             label: t("navbar.participationVariants"),
-            type: "section",
-            path: "/about#participationVariants",
+            type: "page",
+            path: "/participation-variants",
           },
           {
             id: "compParticipation",
             label: t("navbar.compParticipation"),
-            type: "section",
-            path: "/about#compParticipation",
+            type: "page",
+            path: "/competitive-participation",
           },
           {
             id: "awards",
@@ -69,8 +71,8 @@ export default function Navbar() {
           {
             id: "organizations",
             label: t("navbar.organizations"),
-            type: "section",
-            path: "/about#organizations",
+            type: "page",
+            path: "/organizations",
           },
           {
             id: "eafo",
@@ -81,8 +83,8 @@ export default function Navbar() {
           {
             id: "pricing",
             label: t("navbar.pricing"),
-            type: "section",
-            path: "/about#pricing",
+            type: "page",
+            path: "/pricing",
           },
           {
             id: "paymentOptions",
@@ -107,14 +109,14 @@ export default function Navbar() {
           {
             id: "pricing",
             label: t("navbar.pricing"),
-            type: "section",
-            path: "/register#pricing",
+            type: "page",
+            path: "/pricing",
           },
           {
             id: "registerNow",
             label: t("navbar.registerNow"),
             type: "page",
-            path: "/register",
+            path: "/register-now",
           },
           {
             id: "paymentOptions",
@@ -139,20 +141,20 @@ export default function Navbar() {
           {
             id: "submitAbstract",
             label: t("navbar.submitAbstract"),
-            type: "section",
-            path: "/submission#abstract",
+            type: "page",
+            path: "/submit-abstract",
           },
           {
             id: "submitPathology",
             label: t("navbar.submitPathology"),
-            type: "section",
-            path: "/submission#pathology",
+            type: "page",
+            path: "/submit-pathology-case",
           },
           {
             id: "submitResearch",
             label: t("navbar.submitResearch"),
-            type: "section",
-            path: "/submission#research",
+            type: "page",
+            path: "/submit-research-proposal",
           },
           {
             id: "awards",
@@ -166,13 +168,13 @@ export default function Navbar() {
         id: "experts",
         label: t("navbar.experts"),
         type: "page",
-        path: "/experts",
+        path: "/experts-and-committees",
       },
       {
         id: "schedule",
         label: t("navbar.schedule"),
         type: "page",
-        path: "/schedule",
+        path: "/schedule-and-program",
       },
       {
         id: "visa",
@@ -229,8 +231,8 @@ export default function Navbar() {
           {
             id: "courseDesc",
             label: t("navbar.courseDesc"),
-            type: "section",
-            path: "/about#courseDesc",
+            type: "page",
+            path: "/course-description",
           },
           {
             id: "venue",
@@ -241,14 +243,14 @@ export default function Navbar() {
           {
             id: "participationVariants",
             label: t("navbar.participationVariants"),
-            type: "section",
-            path: "/about#participationVariants",
+            type: "page",
+            path: "/participation-variants",
           },
           {
             id: "compParticipation",
             label: t("navbar.compParticipation"),
-            type: "section",
-            path: "/about#compParticipation",
+            type: "page",
+            path: "/competitive-participation",
           },
           {
             id: "awards",
@@ -271,8 +273,8 @@ export default function Navbar() {
           {
             id: "organizations",
             label: t("navbar.organizations"),
-            type: "section",
-            path: "/about#organizations",
+            type: "page",
+            path: "/organizations",
           },
           {
             id: "eafo",
@@ -283,8 +285,8 @@ export default function Navbar() {
           {
             id: "pricing",
             label: t("navbar.pricing"),
-            type: "section",
-            path: "/about#pricing",
+            type: "page",
+            path: "/pricing",
           },
           {
             id: "paymentOptions",
@@ -309,8 +311,8 @@ export default function Navbar() {
           {
             id: "pricing",
             label: t("navbar.pricing"),
-            type: "section",
-            path: "/register#pricing",
+            type: "page",
+            path: "/pricing",
           },
           {
             id: "registerNow",
@@ -341,20 +343,20 @@ export default function Navbar() {
           {
             id: "submitAbstract",
             label: t("navbar.submitAbstract"),
-            type: "section",
-            path: "/submission#abstract",
+            type: "page",
+            path: "/submit-abstract",
           },
           {
             id: "submitPathology",
             label: t("navbar.submitPathology"),
-            type: "section",
-            path: "/submission#pathology",
+            type: "page",
+            path: "/submit-pathology-case",
           },
           {
             id: "submitResearch",
             label: t("navbar.submitResearch"),
-            type: "section",
-            path: "/submission#research",
+            type: "page",
+            path: "/submit-research-proposal",
           },
           {
             id: "awards",
@@ -368,13 +370,13 @@ export default function Navbar() {
         id: "experts",
         label: t("navbar.experts"),
         type: "page",
-        path: "/experts",
+        path: "/experts-and-committees",
       },
       {
         id: "schedule",
         label: t("navbar.schedule"),
         type: "page",
-        path: "/schedule",
+        path: "/schedule-and-program",
       },
 
       {
@@ -413,9 +415,13 @@ export default function Navbar() {
     <nav className="w-full fixed top-0 left-0 z-50 shadow-md bg-white">
       <div className="max-w-7xl mx-auto px-4  flex items-center justify-between h-22">
         {/* Logo + Title */}
-        <div className="flex items-center gap-4">
-          <img src="/logo.avif" alt="EAFO logo" className="h-10 xl:h-14" />
-        </div>
+        <Link to={"/"} className="flex items-center gap-4">
+          <img
+            src="/logo.avif"
+            alt="EAFO logo"
+            className="h-9 md:h-10 xl:h-14"
+          />
+        </Link>
 
         {/* Desktop Nav */}
         <ul className="hidden lg:flex items-center gap-5 xl:gap-10 text-[0.8rem] xl:text-sm text-gray-700">
@@ -481,12 +487,36 @@ export default function Navbar() {
           </li>
         </ul>
 
+        <div className="lg:hidden">
+          {selectedLang === "en" ? (
+            <button
+              onClick={() => changeLanguage("ru")}
+              className="flex items-center gap-2 z-10 cursor-pointer border px-2 py-1 rounded-sm"
+            >
+              Русский
+              <img src="/ru.png" alt="" className="w-4" />
+            </button>
+          ) : (
+            <button
+              onClick={() => changeLanguage("en")}
+              className="flex items-center gap-2 border px-2 py-1 rounded-sm"
+            >
+              English
+              <img src="/ru.png" alt="" className="w-4" />
+            </button>
+          )}
+        </div>
+
         {/* Mobile Menu Button */}
         <button
           className="lg:hidden"
           onClick={() => setMobileMenu(!mobileMenu)}
         >
-          <Menu size={28} />
+          {mobileMenu ? (
+            <RxCross1 size={32} className="text-gray-700" />
+          ) : (
+            <TfiMenu size={32} className="text-gray-700" />
+          )}
         </button>
       </div>
 
@@ -531,25 +561,6 @@ export default function Navbar() {
                   )}
                 </li>
               ))}
-              <li>
-                {selectedLang === "en" ? (
-                  <button
-                    onClick={() => changeLanguage("ru")}
-                    className="flex items-center gap-2 z-10 cursor-pointer border px-2 py-1 rounded-sm"
-                  >
-                    Русский
-                    <img src="/ru.png" alt="" className="w-4" />
-                  </button>
-                ) : (
-                  <button
-                    onClick={() => changeLanguage("en")}
-                    className="flex items-center gap-2 border px-2 py-1 rounded-sm"
-                  >
-                    English
-                    <img src="/ru.png" alt="" className="w-4" />
-                  </button>
-                )}
-              </li>
             </ul>
           </motion.div>
         )}

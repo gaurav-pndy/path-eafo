@@ -97,5 +97,17 @@
      
         "title3": "47th EAFO OncoPathology Course<br/> <b>Breast Tumors</b>",
         "subtitle": "2025 | Russian Federation"
+    },
+    "buttons": {
+        "courseDesc": "Course Description",
+        "venue": "Venue",
+        "organizations" :"Organizations",
+        "pricing": "Pricing",
+        "register": "Register Now",
+        "submitAbstract": "Submit Abstract",
+        "submitPathology": "Submit Pathology Case",
+        "submitResearch": "Submit Research Proposal",
+        "experts": "Experts & Committees",
+        "schedule": "Schedule & Program"
     }
 }

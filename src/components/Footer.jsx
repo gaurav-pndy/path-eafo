@@ -11,12 +11,12 @@ const Footer = () => {
   const { t } = useTranslation();
 
   const footerLinks = [
-    { label: t("navbar.registration"), path: "/register" },
+    { label: t("navbar.registration"), path: "/register-now" },
     { label: t("navbar.compParticipation"), path: "/participation" },
-    { label: t("navbar.submitAbstract"), path: "/submission#abstract" },
-    { label: t("navbar.submitPathology"), path: "/submission#pathology" },
-    { label: t("navbar.submitResearch"), path: "/submission#research" },
-    { label: t("navbar.schedule"), path: "/schedule" },
+    { label: t("navbar.submitAbstract"), path: "/submit-abstract" },
+    { label: t("navbar.submitPathology"), path: "/submit-pathology-case" },
+    { label: t("navbar.submitResearch"), path: "/submit-research-proposal" },
+    { label: t("navbar.schedule"), path: "/schedule-and-program" },
     { label: t("navbar.awards"), path: "/awards" },
     { label: t("navbar.home"), path: "/" },
   ];
