@@ -109,5 +109,97 @@
         "submitResearch": "Submit Research Proposal",
         "experts": "Experts & Committees",
         "schedule": "Schedule & Program"
+    },
+    "partVariants": {
+        "title": "Participation Variants",
+        "subtitle": "EAFO offers you residential, non-residential and online options.",
+        "onsite": "On-Site without Accomodation",
+        "para1": "Opt for the on-site without accommodation participation option at the EAFO Oncopathology Courses  for a flexible and enriching learning journey. Attend all course sessions, workshops, and interactive activities on campus while having the flexibility to commute from your preferred accommodation outside the campus. Benefit from the proximity to the course venue without the need for overnight stays, allowing you to customize your schedule according to your personal preferences and commitments. Connect with leading experts, faculty members, and peers during breaks, networking opportunities, and social events, fostering professional relationships and knowledge sharing.",
+        "online" : "Online Participation",
+        "para2": "Join the EAFO Oncopathology Courses  from anywhere in the world through our online participation variant. Access live-streamed sessions, virtual workshops, and interactive discussions from the comfort of your home or office. Engage with course content in real-time, participate in Q&A sessions, and connect with faculty members and other online participants through virtual networking opportunities. Benefit from the flexibility of online participation, allowing you to customize your learning experience based on your schedule and preferences. Stay up-to-date with the latest advancements in pathology research and expand your professional network without the need for travel."
+    },
+    "compParticipation": {
+        "title": "Extra Subsidized Participation",
+        "subtitle": "(Competitive Participation)",
+        "desc": "Extra Subsidized participation for the EAFO OncoPathology Courses on \"HematoLymphoid Tumors\" offers a unique opportunity for eligible individuals to attend this event at a reduced cost. This special initiative aims to make the course more accessible to a wider audience, including students, UG & PG Students, PhD Scholars, researchers, and healthcare professionals (under 40 years of age) with limited financial resources.",
+        "criteria": "Criteria",
+        "criteriaDesc": "Criteria for extra subsidized participation in the course:​​​​",
+        "criteriaList": " <li>Age: not more than 40 years (as of 31 October 2024)</li>    <li>Motivation Letter</li>         <li>Resume/CV</li>          <li>Letter of recommendation <b>(Optional)</b></li>          <li>Take part in the online test - <b>The link for the online test will be sent to you separately by email</b></li>",
+        "box1": "To qualify for the Extra Subsidized Participation Category, you have to be under the age of 40 and take part in the online test",
+        "box2": "You will also be required to fill in an additional form along with the registration form in order to take part in the selection",
+        "conditions": "Conditions",
+        "conditionsList": " <li>Priority will be given to those whose Abstract (or) Pathology Case has been Submitted/Accepted</li>          <li>No Travel Support will be given</li>         <li>Priority will be given to the applicants residing in Low & Middle Income Countries (as per World Bank data)</li>          <li>Provide Maximum Information in the Application</li>",
+        "footerText": "Participants who qualify for extra subsidized participation will benefit from full access to entire program, including lectures, interactive panel discussions and other planned activities including catering."        
+    },
+    "awards": {
+    "title": "Awards",
+    "description":
+      "The course will conclude with an award ceremony. Based on their performance throughout the course, selected participants will be offered the following awards:",
+    "list": [
+      {
+        "title": "First Prize",
+        "description":
+          "<b>Medium Term Fellowship with EAFO Certificate:</b> 4 weeks to 4 months. <br/><br/>  <b>Long Term Training Fellowship:</b> 4 months to 6 years. <br/><br/>Training under the leadership of senior renowned pathologists in leading departments of Pathology centers in Russia and India. This will include exposure to HistoPathology, CytoPathology, HematoPathology and Molecular-Genetic Diagnostics. <br/><br/>PostGraduate training Certificates/Diplomas in Pathological Anatomy, Clinical Laboratory Diagnostics and Oncology will be given issued based on the courses opted.",
+        "image": "/awards/first.avif"
+      },
+      {
+        "title": "Second Prize",
+        "description":
+          "<b>Short Term Fellowships</b> in leading institutions/laboratories in Russia or India: 1 to 3 weeks",
+        "image": "/awards/second.avif"
+      },
+      {
+        "title": "Third Prize",
+        "description": "Free registration for a future EAFO Event.",
+        "image": "/awards/third.avif"
+      },
+      {
+        "title": "Fourth Prize",
+        "description": "Pathology books.",
+        "image": "/awards/fourth.avif"
+      },
+      {
+        "title": "Fifth Prize",
+        "description":
+          "One year access to the online version of the <a href='https://tumourclassification.iarc.who.int/welcome/' target='_blank' class='underline'> WHO Classification of Tumors.</a>",
+        "image": "/awards/fifth.avif"
+      },
+      {
+        "title": "Additional Prizes",
+        "description": "Merchandise, etc.",
+        "image": "/awards/sixth.avif"
+      }
+    ]
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "EAFO’s mission is reflected in its motto \"Uniting Continents in Fighting Cancer\", which emphasizes the need for global cooperation in combating cancer. The core purpose of the organization is to provide and facilitate cancer education by making knowledge accessible to all sections of the society. Though the name of the organization denotes a confined region, its activities and out-reach are not restricted to the Eurasian continent thereby making it an inclusive organization open to collaborations and partnerships from all parts of the world.",
+    "button": "Click here to learn more"
+  },
+  "eafo": {
+    "title": "About EAFO",
+    "description": "<b>Eurasian Federation of Oncology (EAFO)</b> is an autonomous professional organization uniting oncologists, other healthcare professionals, anti-cancer & anti-tobacco advocates, patients, survivors, journalists, policy makers, oncology & anti-cancer organizations and others interested in combating cancer from all parts of Asia, Europe and beyond. The organization has its focus on long-term initiatives dedicated to the health and well being of cancer patients, cancer survivors, healthy individuals, initiatives that foster innovations, collegiality, cooperation and professional development primarily through educational programs"
+  },
+  "whatWeDo": {
+    "title": "What we do",
+    "items": {
+      "multiDisciplinary": "Multidisciplinary Forums",
+      "oncoPathology": "OncoPathology Seminars & Practicums",
+      "liveSurgery": "Live Oncosurgery Masterclasses",
+      "radiotherapy": "Radiotherapy Seminars & Practicums",
+      "oncoSurgery": "OncoImaging Seminars",
+      "researchMeetings": "EORPC Collaborative Research Meetings",
+      "cancerPrevention": "Cancer Patients Seminars",
+      "oncologyMeetings": "Oncology Nursing",
+      "speakerBureau": "Speaker & Research Meetings",
+      "studyTrials": {
+        "title": "Study/Clinical Trials",
+        "description": "EAFO is involved in conducting and coordinating pre-clinical, clinical and epidemiological studies."
+      },
+      "multiDisciplinaryTeam": {
+        "title": "Multidisciplinary Team",
+        "description": "The speakers and participants in EAFO events include Medical, Surgical & Radiation Oncologists, Diagnostic & Interventional Radiologists, Pathologists, Genetists & Molecular Biologists, Basic Researchers, Family Physicians, Anti-Cancer & Anti-Tobacco Advocates, Patients, Survivors, Policy Makers, Journalists and Politicians."
+      }
     }
+  }
 }

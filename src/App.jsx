@@ -10,6 +10,8 @@ import ExpertsPage from "./pages/ExpertsPage";
 import SchedulePage from "./pages/SchedulePage";
 import ParticipationVariants from "./pages/ParticipationVariants";
 import CompParticipation from "./pages/CompParticipation";
+import AwardsPage from "./pages/AwardsPage";
+import EAFOPage from "./pages/EAFOPage";
 
 function App() {
   const { t } = useTranslation();
@@ -115,6 +117,14 @@ function App() {
         {
           path: "/competitive-participation",
           element: <CompParticipation />,
+        },
+        {
+          path: "/awards",
+          element: <AwardsPage />,
+        },
+        {
+          path: "/eafo",
+          element: <EAFOPage />,
         },
       ],
     },

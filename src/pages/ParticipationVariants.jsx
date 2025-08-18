@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ParticipationVariants() {
+  const { t } = useTranslation();
   return (
     <div className="w-full flex flex-col items-center ">
       {/* Hero Section */}
@@ -11,9 +13,9 @@ export default function ParticipationVariants() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative w-[90vw] md:w-full bg-white px-2 md:px-6 py-6 md:py-10  shadow-md text-center md:max-w-2xl">
-          <h1 className="text-3xl md:text-6xl ">Participation Variants</h1>
+          <h1 className="text-3xl md:text-6xl ">{t("partVariants.title")} </h1>
           <p className="mt-2 text-base md:text-lg font-[300]">
-            EAFO offers you residential, non-residential and online options.
+            {t("partVariants.subtitle")}{" "}
           </p>
         </div>
       </div>
@@ -24,7 +26,7 @@ export default function ParticipationVariants() {
         <div>
           <div className="flex flex-col-reverse md:flex-row justify-between items-center mb-6 md:mb-10">
             <h2 className="text-3xl md:text-[2.5rem] mt-6 md:mt-0">
-              On-Site without Accommodation
+              {t("partVariants.onsite")}
             </h2>
             <div className="flex justify-center">
               <img
@@ -35,17 +37,7 @@ export default function ParticipationVariants() {
             </div>
           </div>
           <p className="leading-relaxed text-lg font-[300]">
-            Opt for the on-site without accommodation participation option at
-            the EAFO OncoPathology Courses for a flexible and enriching learning
-            journey. Attend all course sessions, workshops, and interactive
-            activities on campus while having the flexibility to commute from
-            your preferred accommodation outside the campus. Benefit from the
-            proximity to the course venue without the need for overnight stays,
-            allowing you to customize your schedule according to your personal
-            preferences and commitments. Connect with leading experts, faculty
-            members, and peers during breaks, networking opportunities, and
-            social events, fostering professional relationships and knowledge
-            sharing.
+            {t("partVariants.para1")}
           </p>
         </div>
         {/* Image */}
@@ -64,21 +56,11 @@ export default function ParticipationVariants() {
               />
             </div>
             <h2 className="text-3xl md:text-[2.5rem]  mt-6 md:mt-0">
-              Online Participation
+              {t("partVariants.online")}
             </h2>
           </div>
           <p className="leading-relaxed text-lg font-[300]">
-            Opt for the on-site without accommodation participation option at
-            the EAFO OncoPathology Courses for a flexible and enriching learning
-            journey. Attend all course sessions, workshops, and interactive
-            activities on campus while having the flexibility to commute from
-            your preferred accommodation outside the campus. Benefit from the
-            proximity to the course venue without the need for overnight stays,
-            allowing you to customize your schedule according to your personal
-            preferences and commitments. Connect with leading experts, faculty
-            members, and peers during breaks, networking opportunities, and
-            social events, fostering professional relationships and knowledge
-            sharing.
+            {t("partVariants.para2")}
           </p>
         </div>
         {/* Image */}

@@ -53,8 +53,8 @@ export default function Navbar() {
           {
             id: "awards",
             label: t("navbar.awards"),
-            type: "section",
-            path: "/about#awards",
+            type: "page",
+            path: "/awards",
           },
           {
             id: "gallery",
@@ -77,8 +77,8 @@ export default function Navbar() {
           {
             id: "eafo",
             label: t("navbar.eafo"),
-            type: "section",
-            path: "/about#eafo",
+            type: "page",
+            path: "/eafo",
           },
           {
             id: "pricing",
@@ -255,8 +255,8 @@ export default function Navbar() {
           {
             id: "awards",
             label: t("navbar.awards"),
-            type: "section",
-            path: "/about#awards",
+            type: "page",
+            path: "/awards",
           },
           {
             id: "gallery",
@@ -279,8 +279,8 @@ export default function Navbar() {
           {
             id: "eafo",
             label: t("navbar.eafo"),
-            type: "section",
-            path: "/about#eafo",
+            type: "page",
+            path: "/eafo",
           },
           {
             id: "pricing",
