@@ -14,6 +14,8 @@ import AwardsPage from "./pages/AwardsPage";
 import EAFOPage from "./pages/EAFOPage";
 import PaymentOptions from "./pages/PaymentOptions";
 import ContactPage from "./pages/ContactPage";
+import VisaPage from "./pages/VisaPage";
+import SponsorsPage from "./pages/SponsorsPage";
 
 function App() {
   const { t } = useTranslation();
@@ -135,6 +137,14 @@ function App() {
         {
           path: "/contact",
           element: <ContactPage />,
+        },
+        {
+          path: "/visa",
+          element: <VisaPage />,
+        },
+        {
+          path: "/sponsors",
+          element: <SponsorsPage />,
         },
       ],
     },

@@ -183,34 +183,39 @@ export default function Navbar() {
         path: "/visa",
         dropdown: [
           {
-            id: "visaTypes",
+            id: "visa-free-travel",
             label: t("navbar.visaTypes"),
             type: "section",
-            path: "/visa#visaTypes",
+            path: "/visa#visa-free-travel",
+            page: "visa",
           },
           {
-            id: "visaFree",
+            id: "visa-free-list",
             label: t("navbar.visaFree"),
             type: "section",
-            path: "/visa#visaFree",
+            path: "/visa#visa-free-list",
+            page: "visa",
           },
           {
-            id: "eVisa",
+            id: "e-visa-list",
             label: t("navbar.eVisa"),
             type: "section",
-            path: "/visa#eVisa",
+            path: "/visa#e-visa-list",
+            page: "visa",
           },
           {
-            id: "visaDocs",
+            id: "visa-documents",
             label: t("navbar.visaDocs"),
             type: "section",
-            path: "/visa#visaDocs",
+            path: "/visa#visa-documents",
+            page: "visa",
           },
           {
-            id: "russianEmb",
+            id: "russian-embassies",
             label: t("navbar.russianEmb"),
             type: "section",
-            path: "/visa#russianEmb",
+            path: "/visa#russian-embassies",
+            page: "visa",
           },
         ],
       },
@@ -401,15 +406,25 @@ export default function Navbar() {
     if (item.type === "page") {
       navigate(item.path || `/${item.id}`);
     } else if (item.type === "section") {
-      if (location.pathname !== "/") {
-        navigate("/", { state: { scrollTo: item.id } });
-      } else {
-        const el = document.getElementById(item.id);
-        if (el) {
-          el.scrollIntoView({ behavior: "smooth" });
+      // if (location.pathname !== "/") {
+      navigate(`/${item.page}`);
+      // } else {
+      setTimeout(() => {
+        const element = document.getElementById(item.id);
+        if (element) {
+          const yOffset = -100; // margin from top (in px)
+          const y =
+            element.getBoundingClientRect().top + window.scrollY + yOffset;
+
+          window.scrollTo({ top: y, behavior: "smooth" });
         }
-      }
+      }, 100);
+
+      // }
     }
+
+    // setOpenDropdown(null);
+    setMobileMenu(false);
   };
   return (
     <nav className="w-full fixed top-0 left-0 z-50 shadow-md bg-white">

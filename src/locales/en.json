@@ -243,5 +243,22 @@
     "message": "Message",
     "send": "Send"
   }
+  ,
+  "sponsors": {
+    "title": "Sponsors",
+    "platinum": "Platinum Sponsors",
+    "platHead": "Cancer Survivors, their relatives and friends",
+    "platDesc": " This event is supported by unlimited financial and technical support from a group of cancer survivors (including <a href='https://www.drsoma.info/' target='_blank' class='text-red-600 underline'> Dr. Soma </a>), their relatives and friends.",
+  "gold": "Gold Sponsors",
+  "goldDesc": "Become Sponsoring Organization <br /> – Please fill the Sponsorship Form through the link on this page <br /> or contact         <a href='mailto:travel@eafo.info' class='text-red-600 underline'> travel@eafo.info </a> | +7-985-125-7788",
+
+"silver": "Silver Sponsors",
+"silverDesc": " Become Sponsoring Organization <br />– Please fill the sponsorship Form or contact <a href='mailto:travel@eafo.info' class='text-red-600 underline'> travel@eafo.info </a> | +7-985-125-7788",
+ "bronze": "Bronze Sponsors",
+ "bronzeDesc": " Become Sponsoring Organization <br />– Please fill the Sponsorship Form or contact <a href='mailto:travel@eafo.info' class='text-red-600 underline'> travel@eafo.info </a> | +7-985-125-7788",
+"btn1": "Sponsorship Form - 45th OncoPath Course",
+"btn2": "Sponsorship Form - 46th OncoPath Course"
+  }
+
 
 }
