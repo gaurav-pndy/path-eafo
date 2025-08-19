@@ -95,14 +95,14 @@ const VideoGallery = () => {
             <SwiperSlide key={video.id}>
               <div
                 key={video.id}
-                className="relative group cursor-pointer w-full h-38"
+                className="relative group cursor-pointer w-full h-28 md:h-38"
                 onClick={() => setCurrentVideo(video)}
               >
                 {/* Thumbnail Image */}
                 <img
                   src={video.thumb}
                   alt={video.title}
-                  className={`h-38 w-full object-cover  `}
+                  className={`h-28 md:h-38 w-full object-cover  `}
                 />
 
                 {/* Hover Overlay */}

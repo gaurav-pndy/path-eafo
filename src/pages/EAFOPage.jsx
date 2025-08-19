@@ -14,9 +14,13 @@ const EAFOPage = () => {
           <p className="font-[300] text-[1.1rem] leading-relaxed mt-4">
             {t("mission.description")}
           </p>
-          <button className="bg-[#c2274b] mt-6 border border-[#c2274b] text-white text-sm px-4 py-2  whitespace-nowrap hover:bg-white cursor-pointer font-[300]  hover:text-[#c2274b] transition-all duration-300">
+          <a
+            href="https://www.eafo.info/"
+            target="_blank"
+            className="bg-[#c2274b] mt-6 border border-[#c2274b] text-white text-sm px-4 py-2  whitespace-nowrap hover:bg-white cursor-pointer font-[300]  hover:text-[#c2274b] transition-all duration-300"
+          >
             {t("mission.button")}
-          </button>
+          </a>
         </div>
         {/* <div className="flex justify-center"> */}
         <video
@@ -25,7 +29,7 @@ const EAFOPage = () => {
           muted
           src="/eafo-video.mp4"
           alt="EAFO Logo"
-          className="lg:max-w-[88%] w-full h-80 lg:h-full max-h-[40rem] object-cover  border border-[rgba(40,41,54,0.5)]"
+          className="lg:max-w-[88%] w-full h-full  max-h-[40rem] object-cover  border border-[rgba(40,41,54,0.5)]"
         />
         {/* </div> */}
       </section>

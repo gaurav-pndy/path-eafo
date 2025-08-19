@@ -201,5 +201,47 @@
         "description": "The speakers and participants in EAFO events include Medical, Surgical & Radiation Oncologists, Diagnostic & Interventional Radiologists, Pathologists, Genetists & Molecular Biologists, Basic Researchers, Family Physicians, Anti-Cancer & Anti-Tobacco Advocates, Patients, Survivors, Policy Makers, Journalists and Politicians."
       }
     }
+  },
+
+  "paymentOptions": {
+  "top": {
+    "title": "Payment Options",
+    "imageAlt": "Payment",
+    "bullets": [
+      "The registration fees can be paid by Bank Transfer or online payment gateway.",
+      "If you opt for bank transfer option, the following are the options available depending on the country of your bank.",
+      "Payments are accepted only in <b>Russian Rubles (RUB) and Indian Rupees (INR)</b>."
+    ],
+    "noteTitle": "Please note:",
+    "notes": [
+      "After you make the payment, please send the bank transfer confirmation and your name to <a class='text-red-600 underline' href='mailto:travel@eafo.info'>travel@eafo.info</a>.",
+      "If you are using a credit/debit card for payment, please refer to the link provided in the email you received.",
+      "Please ensure that you carefully go through the payment options to prevent any potential legal or payment-related complications."
+    ]
+  },
+  "tabs": {
+    "outside": "Paying from any bank outside Russia",
+    "russia": "Paying from Russian Bank or any other bank in Russian Rubles"
   }
+},
+
+"contact": {
+    "title": "Contact Us",
+    "subtitle": "If you have any queries in regards to the event, please don't hesitate to contact us and we assure you that we would get back to you as soon as possible.",
+    "addressTitle": "Address",
+    "moscow": "Moscow Address",
+    "moscowAddress": "ANO EAFO <br/>Educational & Research Center, Volokolamskoye Highway, 1, Building 1, Office 606C <br/>Moscow, Russian Federation - 125080",
+    "techPartner": "Technical Partner Address",
+    "mumbai": "Mumbai Address",
+    "airdrie": "Airdrie Address",
+    "phone": "Phone",
+    "email": "Email",
+    "social": "Social Media",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "emailPlaceholder": "Email *",
+    "message": "Message",
+    "send": "Send"
+  }
+
 }

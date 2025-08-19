@@ -12,6 +12,8 @@ import ParticipationVariants from "./pages/ParticipationVariants";
 import CompParticipation from "./pages/CompParticipation";
 import AwardsPage from "./pages/AwardsPage";
 import EAFOPage from "./pages/EAFOPage";
+import PaymentOptions from "./pages/PaymentOptions";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   const { t } = useTranslation();
@@ -125,6 +127,14 @@ function App() {
         {
           path: "/eafo",
           element: <EAFOPage />,
+        },
+        {
+          path: "/payment-options",
+          element: <PaymentOptions />,
+        },
+        {
+          path: "/contact",
+          element: <ContactPage />,
         },
       ],
     },
